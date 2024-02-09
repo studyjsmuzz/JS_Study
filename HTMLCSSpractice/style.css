@@ -1,0 +1,33 @@
+
+/* elememt selector */
+
+h1{
+    color: brown;
+    background-color: aqua;
+}
+
+/* universal selector */
+/* *{
+    color:blue
+} */
+#hj{
+    color:red;
+}
+form{
+    display: flex;
+    padding: 40px;
+   justify-items: center;
+    border: solid 5px;
+    box-shadow: 10px;
+    border-color:black;
+    background-color: gray;
+
+
+}
+input{
+    text-align: left;
+}
+/* div{
+    margin-left: 20%;
+    padding: 2px;
+} */

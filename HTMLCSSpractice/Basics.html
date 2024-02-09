@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basics</title>
+  <!--adds image to title-->
+  <link rel="icon" href="./images/icons8-favicon-48.png" type="image/x-icon" />
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <link rel="stylesheet" href="./style.css">
+
+
+
+</head>
+
+
+<body>
+
+  <!--Heading tags-->
+  <h1>Heading h1</h1>
+  <h2>Heading h2</h2>
+  <h3>Heading h3</h3>
+  <h4>Heading h4</h4>
+  <h5>Heading h5</h5>
+  <h6>Heading h6</h6>
+
+
+
+  <!--this is paragraph tag-->
+  <p>This is Paragraph</p>
+
+
+
+  <!--anchor tag for page links-->
+  <!-- <a href="https://www.google.com">Google</a> -->
+  <!-- <a href="https://www.google.com" target="_top"> Google</a> -->
+  <a href="https://www.google.com" target="_self"> <img src="./images/cooking.png"></a>
+
+  <br>
+
+
+
+
+  <!--image tag self closing tag-->
+  <img src="./images/html_logo.png" height="200px" width="200px" alt="html_logo" />
+  <figcaption>HTML logo</figcaption>
+  <br>
+
+
+
+  <!--text formatting tags for highlight text -->
+  <p><b>Bold</b>
+    <hr><i>Italic</i>
+    <hr><u>Underline</u>
+  </p>
+  <p><big>Big</big><br><small>Small</small></p>
+  <p>H<sub>2</sub>O</p>
+  <p>A<sup>n</sup>+B</p>
+  <pre>This is 
+        pre tag
+    </pre>
+  <br>
+
+  <!--Page Layout Techniques-->
+  <header>
+
+    <h1>This is header section</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section> This is Section</section>
+    <article> This is Article</article>
+    <aside> This is Aside</aside>
+    <h2>Main Content Area</h2>
+    <p>This is where your main content would go.</p>
+  </main>
+
+  <footer>
+    <p> Footer here
+      &copy; 2024 Your Website. All rights reserved.</p>
+  </footer>
+
+
+  <!--some tags-->
+  <address>10-60,nemali nagar,basinikonda</address>
+  <canvas>
+    <p>canvas is used to draw graphics and other visual content on a web page using js</p>
+  </canvas>
+
+
+  <!--ul and ol tags-->
+  <ol>
+    <li>apple<ol>
+        <li>h1</li>
+      </ol>
+    </li>
+    <li>banana</li>
+    <li>orange</li>
+    <li>pineapple</li>
+  </ol>
+  <ul>
+    <li>juice</li>
+    <li>sapota juice</li>
+    <li>karela juice</li>
+    <li>amla juice</li>
+  </ul>
+
+
+  <!--Table-->
+  <table border="1">
+    <caption id="hj"> Details</caption>
+    <thead>
+      <tr>
+
+        <th>ID</th>
+        <th>Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="2">1</td>
+        <td>Muzamil</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>suraiya</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Sara</td>
+      </tr>
+      <tr>
+        <td>
+          <figure><img src="./images/icons8-favicon-48.png">
+            <figcaption>favicon</figcaption>
+          </figure>
+        </td>
+      </tr>
+    </tbody>
+
+  </table>
+  <hr>
+  <br>
+  <!--Form-->
+
+
+
+  <br>
+  <br>
+
+
+
+  <form>
+    <div style="text-align: center; margin-left: 70px;">
+      <label for="Username">Username</label>
+      <input id="1" type="text" placeholder="username" required>
+      <br>
+
+      <label for="Password">Password</label>
+      <input id="2" type="password" required>
+      <br>
+
+
+      <button onclick="abc()" type="submit">Login</button>
+      <br>
+
+      <label for="Feedback">Feedback here</label>
+      <textarea name="feedback"></textarea>
+
+    </div>
+  </form>
+
+  <br>
+  <br>
+  <!-- select tag-->
+  <select name="Numbers">
+    <option value="One">One</option>
+    <option value="two">two</option>
+
+    <option>three</option>
+
+    <option value="four">four</option>
+
+  </select>
+  <br>
+  <br>
+
+  <iframe
+    src="https://in.video.search.yahoo.com/search/video;_ylt=Awr1Uae3bcJllekX9fK7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3BpdnM-?p=video&fr2=piv-web&type=E210IN714G0&fr=mcafee#id=76&vid=157e233def21eff2d670990014cf020d&action=view">
+
+  </iframe>
+
+
+
+  <script>
+    let abc = () => {
+      let ab = document.getElementById('1').value
+      console.log(ab);
+      localStorage.setItem("hi", ab)
+      let ed = localStorage.getItem("hi")
+      alert(ed);
+    }
+
+  </script>
+
+</body>
+
+</html>
